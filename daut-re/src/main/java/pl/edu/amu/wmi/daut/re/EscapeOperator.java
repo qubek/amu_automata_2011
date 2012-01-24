@@ -43,17 +43,17 @@ public class EscapeOperator extends NullaryRegexpOperator {
     private char translate() {
         switch (znak) {
             case 'n':
-                return ('\n');
+                return '\n';
             case 't':
-                return ('\t');
+                return '\t';
             case 'a':
-                return ('\7');
+                return '\7';
             case 'f':
-                return ('\f');
+                return '\f';
             case 'r':
-                return ('\r');
+                return '\r';
             case 'v':
-                return ('\13');
+                return '\13';
             default:
                 return znak;
 
